@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #FCDFCF;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #5F1221; 
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #cc2a50; 
+  }
+#scrollToTopBtn{
+    padding: 15px 20px !important;
+}
+.navbar-brand img {
+    max-width: 100px;
+}
+
+.form-control {
+    border-radius: 5px;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    opacity: 0;
+    transition: all 0.2s;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.588);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.nav-link:hover::after {
+    opacity: 1;
+}
+
+
+
+.card {
+    border: none;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    transition: transform 0.3s;
+}
+
+.card-text {
+    color: #6c757d;
+}
+
+.explore-link {
+    text-decoration: none;
+    color: #8b0000;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.explore-link:hover {
+    color: #00688e;
+}
+
+
+.s-text h1 {
+    font-family: "Cormorant Garamond", serif;
+    /* font-family: "Montserrat", sans-serif; */
+    font-weight: 600;
+    font-style: normal;
+    font-size: 50px;
+}
+
+.s-text p {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    font-style: bold;
+    font-size: 20px;
+}
+
+.s-text img {
+    margin-top: -2%;
+}
+
+@media (max-width=360px) {
+    .s-text h1 {
+        font-size: 30px;
+    }
+
+    .s-text p {
+        font-size: 15px;
+    }
+
+
+}
+
+
+
+.ho:hover {
+    background: linear-gradient(45deg, pink, rgb(255, 157, 173), rgb(255, 102, 127), rgb(255, 76, 106));
+    transition: 0.5s ease-in-out!important;
+}
+
+.text-center h5 {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+}
+
+
+.section-3 .col-sm-2 img {
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    
+}
+
+.section-3 .col-sm-2 {
+    margin-bottom: 30px;
+    transition: 0.5s;
+
+
+}
+
+.section-3 .col-sm-2:hover {
+    transform: scale(1.08);
+    transition: 0.5s;
+}
+
+@media (max-width:768px) {
+    .section-3 .col-sm-2 {
+        width: 40%;
+        margin-left: 10px;
+        text-align: center;
+    }
+
+}
+
+
+.section-4 img {
+    width: 100%;
+    
+    
+}
+.row{
+    justify-content: center;
+}
+.col-sm-3{
+    /* margin-left: 30px;
+    margin-right: 30px; */
+    justify-content: center;
+}
+.section-4 .col-sm-3 {
+    /* width: 15%; */
+    border: 2px solid transparent;
+    border-radius: 15px;
+    padding: 15px;
+    transition: 0.4s;
+
+}
+
+
+.section-4 .col-sm-3 h1 {
+    color: black;
+    font-size: 18px;
+    padding-top: 3%;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.section-4 .col-sm-3 p {
+    color: orangered;
+    font-size: 18px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.section-4 .col-sm-3:hover {
+    box-shadow: 0 0 5px rgb(213, 239, 243),
+        0 0 15px rgb(201, 237, 241),
+        0 0 25px rgb(196, 233, 238),
+        0 0 20px 3px powderblue;
+        /* transition: 0.4s; */
+}
+
+
+
+@media (max-width:768px) {
+    .section-4 .col-sm-3 {
+        width: 40%;
+        /* margin-left: 10px; */
+        text-align: center;
+    }
+
+}
+
+
+.section-5 img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.section-5 .col-sm-6 {
+    padding: 15px;
+    border: 2px solid transparent;
+}
+
+
+.section-5 .col-sm-6 h1 {
+    color: black;
+    font-size: 30px;
+    padding-top: 3%;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+}
+
+.section-5 .col-sm-6:hover {
+    transform: scale(1.08);
+    transition: 1s;
+}
+
+
+.section-6 img {
+    width: 100%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+
+}
+
+.section-6 .col-sm-3 {
+    padding-bottom: 25px;
+    border: 2px solid transparent;
+    transition: 0.4s ease-in-out;
+
+
+}
+
+.section-6 .col-sm-4 {
+    gap: 30px;
+    transition: 0.4s ease-in-out;
+
+}
+
+.section-6 .row {
+    text-align: center;
+}
+
+.section-6 .col-sm-3:hover {
+    transform: scale(1.08);
+    
+}
+
+.section-6 .col-sm-4:hover {
+    transform: scale(1.08);
+    transition: 0.4s ease-in-out;
+
+}
+
+.gift {
+    background: linear-gradient(45deg, rgb(195, 248, 255), rgb(150, 243, 255), rgb(95, 236, 255), rgb(0, 225, 255));
+}
+
+.gift h1 {
+    font-size: 30px;
+    color: rgb(0, 49, 141);
+    padding: 10px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+}
+
+.section-7 .col-sm-3 img {
+    width: 100%;
+    /* border: 2px solid black;  */
+    border-radius:50%;
+}
+
+.section-7 {
+    text-align: center;
+}
+
+.Haldi {
+    color: black;
+    padding: 5px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    background: linear-gradient(45deg, rgb(255, 255, 200), rgb(255, 255, 100), rgb(255, 255, 50), rgb(255, 255, 0));
+    border-radius: 30px;
+}
+
+.Mehendi {
+    color: black;
+    padding: 5px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    background: linear-gradient(45deg, rgb(200, 255, 200), rgb(100, 255, 100), rgb(50, 255, 50), rgb(0, 255, 0));
+    border-radius: 30px;
+}
+
+.Sangeet {
+    color: black;
+    padding: 5px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    background: linear-gradient(45deg, rgb(255, 200, 200), rgb(255, 100, 100), rgb(255, 50, 50), rgb(255, 0, 0));
+    border-radius: 30px;
+}
+
+.Shaadi {
+    color: black;
+    padding: 5px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    background: linear-gradient(45deg, rgb(255, 230, 200), rgb(255, 185, 100), rgb(255, 163, 50), rgb(255, 140, 0));
+    border-radius: 30px;
+}
+
+
+.section-8 .col-sm-6 img {
+    width: 70%;
+}
+
+.section-8 {
+    text-align: center;
+}
+
+.section-8 .col-sm-6 img:hover {
+    transform: scale(1.08);
+    transition: 1s;
+}
+
+.section-9 .col-sm-3 img {
+    width: 100%;
+}
+
+
+
+.section-9 .col-sm-3 img:hover {
+    box-shadow: 0 0 5px rgb(226, 198, 37),
+        0 0 15px gold,
+        0 0 25px gold,
+        0 0 50px gold;
+    border-radius: 25px;
+    transition: 1s;
+}
+
+.section-9 {
+    text-align: center;
+}
+
+.section-10 {
+    height: 250px;
+    background-image: url(img/0-ALL/White\ Minimalist\ Business\ Zoom\ Virtual\ Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+#scrollProgress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 10px;
+    background-color: #003e9c;
+    z-index: 99;
+}
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    display: none;
+    background-color: #00329f;
+    color: white;
+    border: none;
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 100;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #006691;
+}
+
+
+
+
+
+
+.Product {
+    background-color: rgb(253, 253, 253);
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: 0 6px 12px -7px gray;
+    transition: box-shadow 0.4s ease-out;
+    position: relative;
+    text-align: center;
+}
+
+.Product-img img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(204, 204, 204, 0.581);
+    border-radius: 5px;
+    
+}
+
+.Product-img img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+
+}
+
+.Product-img .rear-img {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: opacity 0.4s ease-out;
+    cursor: pointer;
+    
+}
+
+.Product:hover .rear-img {
+    /* opacity: 1; */
+    z-index: 0;
+    
+  
+}
+
+
+
+.card-title {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .price {
+    color: #ff5722;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-left: 35px;
+  }
+  .old-price {
+    text-decoration: line-through;
+    color: #757575;
+    font-size: 0.9rem;
+  }
+  .offer-badge {
+    background-color: #ff5252;
+    color: white;
+    font-size: 0.8rem;
+    padding: 2px 5px;
+    border-radius: 3px;
+  }
+  .delivery {
+    color: #4caf50;
+    font-size: 0.9rem;
+  }
+
+  .add-to-cart {
+    background: linear-gradient(to right, #ff7eb3, #ff758c);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+
+  .add-to-cart:hover {
+    background: rgb(255, 50, 84);
+  }
+
+  .pho .card-body{
+    border: 1px solid rgb(204, 204, 204, 0.581);
+    border-radius: 15px;
+  }
+
+  .text-secondary{
+    text-align: center;
+  }
+
+  .pho h5{
+    margin-top: 15px;
+  }
+
+
+  .shoping h1{
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .shoping p{
+    text-align: justify;
+  }
+  
