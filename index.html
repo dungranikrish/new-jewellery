@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEWELLERY</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="j.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="sliderstyle.css">
+    
+</head>
+
+<body>
+
+    <script>
+        AOS.init();
+    </script>
+
+
+    <!-- <div class="content"> </div> -->
+    <div id="scrollProgress"></div>
+    <button id="scrollToTopBtn">&#8679;</button>
+
+
+    <script>
+        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+        const scrollProgress = document.getElementById('scrollProgress');
+        const rootElement = document.documentElement;
+
+        document.addEventListener('scroll', handleScroll);
+
+        function handleScroll() {
+            const scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
+            const scrollPercentage = (rootElement.scrollTop / scrollTotal) * 100;
+            // scrollProgress.style.width = `${scrollPercentage}%`;
+
+            if (rootElement.scrollTop > 300) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        }
+
+        scrollToTopBtn.addEventListener('click', scrollToTop);
+
+        function scrollToTop() {
+            rootElement.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+
+
+    </script>
+
+    <nav class="navbar navbar-expand-lg bg-white border-bottom">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="img/1-NAVBAR/pngegg.png" alt="GIVA" style="width: 100px;">
+            </a>
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#zee" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+
+            <div class="collapse navbar-collapse" id="zee">
+                <form class="d-flex flex-grow-1 mx-3" role="search">
+                    <input class="form-control" type="search" placeholder='Search.........' aria-label="Search">
+                    <button class="btn btn-outline-secondary ms-1" type="submit">Search</button>
+                </form>
+
+                <ul class="navbar-nav mb-2 mb-lg-0 align-items-center">
+                    <li class="nav-item mx-2">
+                        <a href="https://www.google.com/maps/place/Surat,+Gujarat/@21.1591802,72.7398946,12z/data=!3m1!4b1!4m6!3m5!1s0x3be04e59411d1563:0xfe4558290938b042!8m2!3d21.1702401!4d72.8310607!16zL20vMDFoMWhu?entry=ttu&g_ep=EgoyMDI1MDEwOC4wIKXMDSoASAFQAw%3D%3D"
+                            class="text-dark me-1 nav-link"><i class="bi bi-geo-alt"></i></i></a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a href="login.html" class="text-dark me-1 nav-link "><i class="bi bi-person"></i></a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-white bg-light border-bottom  na">
+        <div class="container">
+
+            <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
+                <ul class="navbar-nav jus">
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle me-5" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Shop By Category
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="Rings.html">Rings</a></li>
+                            <li><a class="dropdown-item" href="sets.html">Sets</a></li>
+                            <li><a class="dropdown-item" href="Breclets.html">bracelets</a></li>
+                            <li><a class="dropdown-item" href="Earring.html">earrings</a></li>
+                            <li><a class="dropdown-item" href="anklets.html">polki</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle me-5" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Gold
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="gold-pendents.html">Gold Pendants</a></li>
+                            <li><a class="dropdown-item" href="gold-ring.html">Gold Rings</a></li>
+                            <li><a class="dropdown-item" href="gold-earring.html">Gold Earrings</a></li>
+                            <li><a class="dropdown-item" href="gold-nose-pin.html">Gold Nose Pins</a></li>
+                            <li><a class="dropdown-item" href="gold-brecelets.html">Gold Bracelet</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle me-5" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Colour
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="gold-plated.html">Gold Plated</a></li>
+                            <li><a class="dropdown-item" href="rose-gold.html">Rose Gold</a></li>
+                            <li><a class="dropdown-item" href="silver-colur.html">Silver</a></li>
+                            <li><a class="dropdown-item" href="oxidised.html">Oxidised Silver</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle me-5" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Price
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">100-1000</a></li>
+                            <li><a class="dropdown-item" href="#">1000-3000</a></li>
+                            <li><a class="dropdown-item" href="#">3000-5000</a></li>
+                            <li><a class="dropdown-item" href="#">5000-10000</a></li>
+                            <li><a class="dropdown-item" href="#">10000-20000</a></li>
+                            <li><a class="dropdown-item" href="#">20000-50000</a></li>
+                            <li><a class="dropdown-item" href="#">5000-Above</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle me-5" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Gift Store
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="perosnal-gift.html">Personalised Gift</a></li>
+                            <li><a class="dropdown-item" href="couple-gift.html">Cople Gift</a></li>
+                            <li><a class="dropdown-item" href="gold-gift.html">Gold Gift</a></li>
+                            <li><a class="dropdown-item" href="birthhday-gift.html">Birthday Gift</a></li>
+                            <li><a class="dropdown-item" href="anniversary-gift.html">Anniversary Gift</a></li>
+                        </ul>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+    <!-- partial:index.partial.html -->
+    <main class="Main">
+
+        <section class="Carousel" id="carousel" tabindex="-1">
+            <h2 class="Hidden">Carousel</h2>
+            <article class="Card Card--overlay Card--square" id="card-1">
+                <div class="Card__media">
+                    <img class="Card__image" alt="Card image description" width="480" height="480" loading="lazy"
+                        src="img/2-CAROUSEL/1.png">
+                </div>
+                <div class="Card__main">
+                    <h2 class="Card__heading"><a class="Card__link" href="#">Prefer 1/1 aspect ratio</a></h2>
+                    <p>This is a generic card pattern.</p>
+                </div>
+            </article>
+            <!--/Card-->
+            <article class="Card Card--overlay Card--wide" id="card-2">
+                <div class="Card__media">
+                    <img class="Card__image" alt="Card image description" width="720" height="480" loading="lazy"
+                        src="img/2-CAROUSEL/5.png">
+                </div>
+                <div class="Card__main">
+                    <h2 class="Card__heading"><a class="Card__link" href="#">Prefer 16/9 aspect ratio</a></h2>
+                    <p>This is a generic card pattern.</p>
+                </div>
+            </article>
+            <!--/Card-->
+            <article class="Card Card--overlay Card--portrait" id="card-3">
+                <div class="Card__media">
+                    <img class="Card__image" alt="Card image description" width="360" height="480" loading="lazy"
+                        src="img/2-CAROUSEL/9.jpg">
+                </div>
+                <div class="Card__main">
+                    <h2 class="Card__heading"><a class="Card__link" href="#">Prefer 3/4 aspect ratio</a></h2>
+                    <p>This is a generic card pattern.</p>
+                </div>
+            </article>
+            <!--/Card-->
+            <article class="Card Card--overlay Card--photo" id="card-4">
+                <div class="Card__media">
+                    <img class="Card__image" alt="Card image description" width="708" height="480" loading="lazy"
+                        src="img/2-CAROUSEL/3.png">
+                </div>
+                <div class="Card__main">
+                    <h2 class="Card__heading"><a class="Card__link" href="#">Prefer 4/3 aspect ratio</a></h2>
+                    <p>This is a generic card pattern.</p>
+                </div>
+            </article>
+            <!--/Card-->
+            <article class="Card Card--overlay Card--square" id="card-5">
+                <div class="Card__media">
+                    <img class="Card__image" alt="Card image description" width="480" height="480" loading="lazy"
+                        src="img/2-CAROUSEL/8.png">
+                </div>
+                <div class="Card__main">
+                    <h2 class="Card__heading"><a class="Card__link" href="#">Prefer 1/1 aspect ratio</a></h2>
+                    <p>This is a generic card pattern.</p>
+                </div>
+            </article>
+            <!--/Card-->
+            <article class="Card Card--overlay Card--wide" id="card-6">
+                <div class="Card__media">
+                    <img class="Card__image" alt="Card image description" width="720" height="480" loading="lazy"
+                        src="img/2-CAROUSEL/6.jpg">
+                </div>
+                <div class="Card__main">
+                    <h2 class="Card__heading"><a class="Card__link" href="#">Prefer 16/9 aspect ratio</a></h2>
+                    <p>This is a generic card pattern.</p>
+                </div>
+            </article>
+            <!--/Card-->
+            <article class="Card Card--overlay Card--portrait" id="card-7">
+                <div class="Card__media">
+                    <img class="Card__image" alt="Card image description" width="360" height="480" loading="lazy"
+                        src="img/2-CAROUSEL/10.png">
+                </div>
+                <div class="Card__main">
+                    <h2><a class="Card__link" href="#">Prefer 3/4 aspect ratio</a></h2>
+                    <p>This is a generic card pattern.</p>
+                </div>
+            </article>
+            <!--/Card-->
+            <article class="Card Card--overlay Card--photo" id="card-8">
+                <div class="Card__media">
+                    <img class="Card__image" alt="Card image description" width="708" height="480" loading="lazy"
+                        src="img/2-CAROUSEL/4.png">
+                </div>
+                <div class="Card__main">
+                    <h2><a class="Card__link" href="#">Prefer 4/3 aspect ratio</a></h2>
+                    <p>This is a generic card pattern.</p>
+                </div>
+            </article>
+            <!--/Card-->
+        </section>
+        <!--/Carousel-->
+
+        <nav class="Pagination">
+            <h2 class="Hidden">Carousel Navigation</h2>
+            <button class="Arrow" type="button" aria-controls="carousel" disabled>
+                <svg width="16" height="16" viewBox="0 0 16 16" role="presentation">
+                    <path fill-rule="evenodd"
+                        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+                </svg>
+                <span class="Hidden">Previous slide</span>
+            </button>
+            <button class="Arrow" type="button" aria-controls="carousel" disabled>
+                <svg width="16" height="16" viewBox="0 0 16 16" role="presentation">
+                    <path fill-rule="evenodd"
+                        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                </svg>
+                <span class="Hidden">Next slide</span>
+            </button>
+            <div class="Dots">
+                <a href="#card-1" class="Dot" tabindex="-1"><span class="Hidden">Slide 1</span></a>
+                <a href="#card-2" class="Dot" tabindex="-1"><span class="Hidden">Slide 2</span></a>
+                <a href="#card-3" class="Dot" tabindex="-1"><span class="Hidden">Slide 3</span></a>
+                <a href="#card-4" class="Dot" tabindex="-1"><span class="Hidden">Slide 4</span></a>
+                <a href="#card-5" class="Dot" tabindex="-1"><span class="Hidden">Slide 5</span></a>
+                <a href="#card-6" class="Dot" tabindex="-1"><span class="Hidden">Slide 6</span></a>
+                <a href="#card-7" class="Dot" tabindex="-1"><span class="Hidden">Slide 7</span></a>
+                <a href="#card-8" class="Dot" tabindex="-1"><span class="Hidden">Slide 8</span></a>
+            </div>
+        </nav>
+        <!--/Pagination-->
+
+
+
+
+    </main>
+    <!--/Main-->
+    <!-- partial -->
+    <script src="sliderscript.js"></script>
+
+
+
+
+    <div data-aos="fade-up" class="section-2 container" style="padding-bottom: 40px;">
+
+        <div class="s-text mt-5" style="text-align: center;">
+            <h1>Rings To Cherish Forever</h1>
+            <p>Celebrate Forever With the Perfect Engaement Ring</p>
+            <img src="img/0-ALL/Line-Design.svg" alt="">
+        </div>
+
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <a href="everyday-elegone.html" style="text-decoration: none;">
+                    <div class="col">
+                        <div class="card">
+                            <img src="img/3-FOREVER/EVERYDAY ELEGANCE/1 2.jpg" class="card-img-top"
+                                alt="Everyday Essentials">
+                            <div class="card-body text-center ho"
+                                style="border: 1px solid black; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
+                                <h5 class="card-title">Everyday Essentials</h5>
+
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="engagemnet-ring.html" style="text-decoration: none;">
+                    <div class="col">
+                        <div class="card">
+                            <img src="img/3-FOREVER/ENGAGEMENT RING/1.jpg" class="card-img-top"
+                                alt="Wedding Trousseaus">
+                            <div class="card-body text-center ho"
+                                style="border: 1px solid black; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
+                                <h5 class="card-title">Wedding Trousseaus</h5>
+
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="soliter.html" style="text-decoration: none;">
+                    <div class="col">
+                        <div class="card">
+                            <img src="img/3-FOREVER/SOLITAIRE/ring-1.jpg" class="card-img-top" alt="The Party Edit">
+                            <div class="card-body text-center ho"
+                                style="border: 1px solid black; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
+                                <h5 class="card-title">The Party Edit</h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div data-aos="fade-up" class="section-3 container">
+
+        <div class="s-text mt-5" style="text-align: center;">
+            <h1> Top Selling</h1>
+            <p>Shop Pieces Curated to Your Style and Pernce</p>
+            <img src="img/0-ALL/Line-Design.svg" alt="">
+        </div>
+
+
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-2 ">
+                    <img src="img/4-YOUR PERFECT/1.png" alt="">
+                    <h5>Real Diamond Pendant set</h5>
+                    <h6>Rs:14,000</h6>
+                </div>
+
+                <div class="col-sm-2">
+                    <img src="img/4-YOUR PERFECT/2.jpg" alt="">
+                    <h5>Golden Glint Earrings</h5>
+                    <h6>Rs:7,000</h6>
+                </div>
+
+                <div class="col-sm-2">
+                    <img src="img/4-YOUR PERFECT/3.png" alt="">
+                    <h5>Golden Antique Ring</h5>
+                    <h6>Rs:5,000</h6>
+                </div>
+
+                <div class="col-sm-2">
+                    <img src="img/4-YOUR PERFECT/4.png" alt="">
+                    <h5>Gold Bangle</h5>
+                    <h6>Rs:3,000</h6>
+                </div>
+
+                <div class="col-sm-2">
+                    <img src="img/4-YOUR PERFECT/5.png" alt="">
+                    <h5>Polki Set</h5>
+                    <h6>Rs:15,000</h6>
+                </div>
+
+                <div class="col-sm-2">
+                    <img src="img/4-YOUR PERFECT/6.png" alt="">
+                    <h5>Sliver Ring</h5>
+                    <h6>Rs:3,000</h6>
+                </div>
+
+                <div class="col-sm-2">
+                    <img src="img/4-YOUR PERFECT/7.png" alt="">
+                    <h5>Latest Bride Nackles</h5>
+                    <h6>Rs:9,000</h6>
+                </div>
+
+                <div class="col-sm-2">
+                    <img src="img/4-YOUR PERFECT/8.png" alt="">
+                    <h5> God Jewellery </h5>
+                    <h6>Rs:3,000</h6>
+                </div>
+
+                <div class="col-sm-2">
+                    <img src="img/4-YOUR PERFECT/9.png" alt="">
+                    <h5>Golden Heavy Mangalsutra</h5>
+                    <h6>Rs:30,000</h6>
+                </div>
+
+                <div class="col-sm-2">
+                    <img src="img/4-YOUR PERFECT/10.png" alt="">
+                    <h5>Real Diamond Mangalsutra</h5>
+                    <h6>Rs:5,000</h6>
+                </div>
+
+                <div class="col-sm-2">
+                    <img src="img/4-YOUR PERFECT/11.png" alt="">
+                    <h5>Men Ring</h5>
+                    <h6>Rs:2,000</h6>
+                </div>
+
+                <div class="col-sm-2">
+                    <img src="img/4-YOUR PERFECT/12.png" alt="">
+                    <h5>Real Diamond Bangle</h5>
+                    <h6>Rs:3,000</h6>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+    <div data-aos="fade-up" class="section-4  container">
+
+        <div class="s-text mt-5" style="text-align: center;">
+            <h1> Shop By Category</h1>
+            <p>Browse Through Your Favorite Category</p>
+            <img src="img/0-ALL/Line-Design.svg" alt="">
+        </div>
+
+
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-3 ">
+                    <a href="pendants.html" style="text-decoration: none;"><img
+                            src="img/5-CATAGORY/1-PENDANTS/display.webp" alt="">
+                        <h1>PENDANTS</h1>
+                        <p>Explore >>></p>
+                    </a>
+                </div>
+
+                <div class="col-sm-3 ">
+                    <a href="rings.html" style="text-decoration: none;"><img src="img/5-CATAGORY/2-RINGS/display.webp"
+                            alt="">
+                        <h1>RINGS</h1>
+                        <p>Explore >>></p>
+
+                    </a>
+                </div>
+
+                <div class="col-sm-3 ">
+                    <a href="personaled.html" style="text-decoration: none;"><img
+                            src="img/5-CATAGORY/3-PERSONALISD/display.webp" alt="">
+                        <h1>PERSONALISD</h1>
+                        <p>Explore >>></p>
+
+                    </a>
+                </div>
+
+                <div class="col-sm-3 ">
+                    <a href="mangalsutra.html" style="text-decoration: none;"><img
+                            src="img/5-CATAGORY/4-MANGALSUTRA/display.webp" alt="">
+                        <H1>MANGALSUTRA</H1>
+                        <p>Explore >>></p>
+
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm-3 ">
+                    <a href="earring.html" style="text-decoration: none;"><img
+                            src="img/5-CATAGORY/5-EARRING/display.webp" alt="">
+                        <h1>EARRING</h1>
+                        <p>Explore >>></p>
+
+                    </a>
+                </div>
+
+                <div class="col-sm-3 ">
+                    <a href="silver-chain.html" style="text-decoration: none;"><img
+                            src="img/5-CATAGORY/6-SILVER CHAINS/display.jpg" alt="">
+                        <h1>SILVER CHAINS</h1>
+                        <p>Explore >>></p>
+
+                    </a>
+                </div>
+
+                <div class="col-sm-3 ">
+                    <a href="breclets.html" style="text-decoration: none;"><img
+                            src="img/5-CATAGORY/7-BRACELETS/display.webp" alt="">
+                        <h1>BRACELETS</h1>
+                        <p>Explore >>></p>
+
+                    </a>
+                </div>
+
+                <div class="col-sm-3 ">
+                    <a href="nose-pin.html" style="text-decoration: none;"><img
+                            src="img/5-CATAGORY/8-NOSE PIN/display.webp" alt="">
+                        <h1>NOSE OIN</h1>
+                        <p>Explore >>></p>
+
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-3 ">
+                    <a href="sets.html" style="text-decoration: none;"><img src="img/5-CATAGORY/9-SETS/display.webp"
+                            alt="">
+                        <h1>SETS</h1>
+                        <p>Explore >>></p>
+
+                    </a>
+                </div>
+
+                <div class="col-sm-3 ">
+                    <a href="top-rings.html" style="text-decoration: none;"><img
+                            src="img/5-CATAGORY/10-TOPRINGS/display.webp" alt="">
+                        <h1>TOP RINGS</h1>
+                        <p>Explore >>></p>
+
+                    </a>
+                </div>
+
+                <div class="col-sm-3 ">
+                    <a href="anklets.html" style="text-decoration: none;"><img
+                            src="img/5-CATAGORY/11-ANKLETS/display.webp" alt="">
+                        <h1>ANKLETS</h1>
+                        <p>Explore >>></p>
+
+                    </a>
+                </div>
+
+                <div class="col-sm-3 ">
+                    <a href="mens.html" style="text-decoration: none;"><img src="img/5-CATAGORY/12-MENS/display.webp"
+                            alt="">
+                        <h1>MENS</h1>
+                        <p>Explore >>></p>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div data-aos="fade-up" class="section-5 container mb-5">
+
+        <div class="s-text mt-5" style="text-align: center;">
+            <h1> Dungrani Essentials</h1>
+            <img src="img/0-ALL/Line-Design.svg" alt="">
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <!-- <a href="gold-githled.html" style="text-decoration: none;">  -->
+                    <img src="img/7-ESSENTIALS/1-GOLD GITHLAD/Picsart_25-01-10_16-38-22-594.jpg" alt="">
+                    <h1>Gold With Lab Diamonds</h1>
+                    </a>
+                </div>
+
+                <div class="col-sm-6">
+                    <!-- <a href="silver-jwellery.html" style="text-decoration: none;">  -->
+                    <img src="img/7-ESSENTIALS/2-SILVER JEWALLRY/Picsart_25-01-10_16-38-57-501.jpg" alt="">
+                    <h1>Silver Jewellery</h1>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <div data-aos="fade-up" class="section-6 container mb-5">
+
+        <div class="s-text mt-5" style="text-align: center;">
+            <h1> Gift Of Choice</h1>
+            <p>Breathtacking Gift For Your Loved Ones.</p>
+            <img src="img/0-ALL/Line-Design.svg" alt="">
+        </div>
+
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <a href="perosnal-gift.html" style="text-decoration: none;"><img src="img/0-ALL/per-gift.jpg"
+                            alt="">
+                        <div class="gift">
+                            <h1>Personalised Gift</h1>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-sm-3">
+                    <a href="couple-gift.html" style="text-decoration: none;"><img src="img/0-ALL/couple-gift.jpg"
+                            alt="">
+                        <div class="gift">
+                            <h1>Couple Gift</h1>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-sm-3">
+                    <a href="birthhday-gift.html" style="text-decoration: none;"><img src="img/0-ALL/birthday-gift.jpg"
+                            alt="">
+                        <div class="gift">
+                            <h1>Birthday Gift</h1>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-sm-3">
+                    <a href="anniversary-gift.html" style="text-decoration: none;"><img src="img/0-ALL/anni-gift.jpg"
+                            alt="">
+                        <div class="gift">
+                            <h1>Anniversary Gift</h1>
+                        </div>
+                    </a>
+                </div>
+                <br>
+
+                <div class="col-sm-4">
+                    <a href="gold-gift.html" style="text-decoration: none;"><img src="img/0-ALL/gold-gift.jpg" alt="">
+                        <div class="gift">
+                            <h1>Gold Gift</h1>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-sm-4">
+                    <a href="silver-gift.html" style="text-decoration: none;"><img src="img/0-ALL/silver.jpg" alt="">
+                        <div class="gift">
+                            <h1>Silver Gift</h1>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-sm-4">
+                    <a href="most-gifted.html" style="text-decoration: none;"><img src="img/0-ALL/most-gift.jpg" alt="">
+                        <div class="gift">
+                            <h1>Most Gifted</h1>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div data-aos="fade-up" class="section-7 container mb-5">
+
+        <div class="s-text mt-5" style="text-align: center;">
+            <h1>Get Ready For </h1>
+            <img src="img/0-ALL/Line-Design.svg" alt="">
+        </div>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <a href="haldi.html" style="text-decoration: none;">
+                        <img src="img/8-GET READY/1-HALDI/Copy_of_Haldi-min.jpg" alt="">
+                        <div class="Haldi mt-2">
+                            <h1>Haldi</h1>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-sm-3">
+                    <a href="mehandi.html" style="text-decoration: none;">
+                        <img src="img/8-GET READY/3-MEHENDI/Copy_of_Mehendi-min.jpg" alt="">
+                        <div class="Mehendi mt-2">
+                            <h1>Mehendi</h1>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-sm-3">
+                    <a href="sangeet.html" style="text-decoration: none;">
+                        <img src="img/8-GET READY/2-SANGEET/Copy_of_Sangeet-min.jpg" alt="">
+                        <div class="Sangeet mt-2">
+                            <h1>Sangeet</h1>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-sm-3">
+                    <a href="shaddi.html" style="text-decoration: none;">
+                        <img src="img/8-GET READY/4-SHADII/Copy_of_Shaadi-min.jpg" alt="">
+                        <div class="Shaadi mt-2">
+                            <h1>Shaadi</h1>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div data-aos="fade-up" class="section-8 container mb-5">
+
+        <div class="s-text mt-5" style="text-align: center;">
+            <h1>Shop By Colour</h1>
+            <img src="img/0-ALL/Line-Design.svg" alt="">
+        </div>
+
+
+        <div class="row">
+            <div class="col-sm-6">
+                <a href="gold-plated.html">
+                    <img src="img/9-COLOUR/1-GOLD PLATED/Gold_Mobile-min_3f86cbbf-8e8c-4660-b266-4b1d4c12ab0f.webp"
+                        alt="">
+                </a>
+            </div>
+            <div class="col-sm-6">
+                <a href="rose-gold.html">
+                    <img src="img/9-COLOUR/2-ROSE GOLD/Rose_gold_1_-min_4d382c79-b4ea-455c-a5fe-91c4c8f316b3.webp"
+                        alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <a href="silver-colur.html">
+                    <img src="img/9-COLOUR/3-SILVER/Silver_2_-min_757c9bf0-3597-4f6a-a41c-521658150e80.webp" alt="">
+                </a>
+            </div>
+            <div class="col-sm-6">
+                <a href="oxidised.html">
+                    <img src="img/9-COLOUR/4-OXIDISED SILVER/oxidised-min_78ebf594-8603-48e5-af11-30206725fba1.webp "
+                        alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div data-aos="fade-up" class="section-9 container mb-5">
+
+        <div class="s-text mt-5" style="text-align: center;">
+            <h1>Gold Jewellery</h1>
+            <img src="img/0-ALL/Line-Design.svg" alt="">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <a href="gold-brecelets.html" style="text-decoration: none;">
+                            <img src="img/10-GOLD/5-GOLD BRACELET/display.webp" alt="">
+                        </a>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <a href="gold-ring.html" style="text-decoration: none;">
+                            <img src="img/10-GOLD/2-GOLD RINGS/display.webp" alt="">
+                        </a>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <a href="gold-earring.html" style="text-decoration: none;">
+                            <img src="img/10-GOLD/3-GOLD EARRINGS/display.webp" alt="">
+                        </a>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <a href="gold-nose-pin.html" style="text-decoration: none;">
+                            <img src="img/10-GOLD/4-GOLD NOSE PINS/display.webp" alt="">
+                        </a>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="section-10">
+        <footer class="container-filud">
+
+            <div class="container-fluid text-dark pt-5">
+
+                <div class="row">
+                    <div class="col col-lg-4 ps-5">
+                        <h2>Dungrani jewellers</h2>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>+91 1234567890</p>
+                        <p>+91 0987654321</p>
+                    </div>
+
+                    <div class="col col-lg-2 ps-5" style="text-align: left;">
+                        <h5>CATEGORY</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="pendants.html" class="text-decoration-none text-dark">Pendants</a></li>
+                            <li><a href="rings.html" class="text-decoration-none text-dark">Rings</a></li>
+                            <li><a href="breclets.html" class="text-decoration-none text-dark">Bracelets</a></li>
+                            <li><a href="earring.html" class="text-decoration-none text-dark">Earrings</a></li>
+                            <li><a href="sets.html" class="text-decoration-none text-dark">Sets</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col col-lg-2 ps-5" style="text-align: left;">
+                        <h5>GIFT</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="birthhday-gift.html" class="text-decoration-none text-dark">Birthday</a></li>
+                            <li><a href="anniversary-gift.html" class="text-decoration-none text-dark">Anniversary</a>
+                            </li>
+                            <li><a href="couple-gift.html" class="text-decoration-none text-dark">Couple</a></li>
+                            <li><a href="gold-gift.html" class="text-decoration-none text-dark">Gold</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col col-lg-2 ps-5" style="text-align: left;">
+                        <h5>INFO</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="shopping.html" class="text-decoration-none text-dark">Shipping & Returns</a>
+                            </li>
+                            <li><a href="pri-pollicy.html" class="text-decoration-none text-dark">Privacy Policy</a>
+                            </li>
+                            <li><a href="international.html" class="text-decoration-none text-dark">International
+                                    Shipping</a></li>
+                            <li><a href="supports.html" class="text-decoration-none text-dark">FAQs & Support</a></li>
+                            <li><a href="terms.html" class="text-decoration-none text-dark">Terms of Service</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col col-lg-2 text-lg-end pe-5">
+                        <h4>CONTECT AS</h4>
+                        <div class="">
+                            <a href="https://www.instagram.com/" class="text-decoration-none me-2 text-dark"><i
+                                    class="bi bi-instagram"></i></a>
+                            <a href="https://www.facebook.com/" class="text-decoration-none me-2 text-dark"><i
+                                    class="bi bi-facebook"></i></a>
+                            <a href="https://web.whatsapp.com/" class="text-decoration-none me-2 text-dark"><i
+                                    class="bi bi-whatsapp"></i></a>
+                            <a href="https://www.facebook.com/" class="text-decoration-none me-2 text-dark"><i
+                                    class="bi bi-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <div style="text-align: center;" class="pb-5">
+                    <p>Copyright © 2018 Dungrani.</p>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
